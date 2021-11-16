@@ -1,0 +1,639 @@
+/* STYLE SHEET */
+/*
+COLORS
+#fffcf5 ecru
+#a39e93 ecru
+#c94a00 orange
+#a13b00 dark orange
+#66615a brown
+#ffffff white
+#ec5e28 bright orange
+#f1eae1 light ecru
+#67625e
+#66625b dark clay
+#252321 almsot black grey
+
+FONTS
+Avenir Next Sans Serif
+h1 - 74px 300weight uppercase
+	span - 700weight
+	simply - 70px normal weight
+h2 - 20px bolder
+h3
+h4
+h5
+h6
+body - 16px
+header - 14px
+
+/** GLOBAL STYLING  **/
+
+/* ======================================= */
+
+/* Box Model fix */
+
+html {box-sizing: border-box;}
+	
+*, *:before, *:after {box-sizing: inherit;}
+
+/* ======================================= */
+
+/* clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ======================================= */
+
+/* Image baseline */
+
+img {
+	max-width: 100%;
+}
+
+
+/* Typography */
+
+	body {
+		background-color: #fffcf5; /* ecru */
+		font-family: 'Avenir Next', sans-serif;
+		font-size: 16px;
+		color: #242321;	
+	}
+
+	p {
+		font-size: 1em;
+		line-height: 160%;
+	}
+
+	h2 {
+		font-size: 20px;
+		font-weight: bolder;
+	}
+
+
+	h3 {
+		font-size: 30px;
+		font-weight: normal;
+	}
+
+	a {
+		color: #c94a00; /* orange */
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #a13b00; /* dark orange */
+	}
+
+/* ======================================= */
+
+/* header  ===   
+uses classes: "row" "added-margin"
+uses IDs: "download", "facebook-icon", "twitter-icon"
+uses Combinators: 
+	descendants of the 'header' selector
+	descendants of the 'header' selector that are <li> lists items and have an id name  
+
+*/
+
+	header .row {
+		margin-top: 25px;
+		margin-bottom: 20px;
+	}
+
+	header {
+		background-color: #fffcf5;
+	}
+
+	header li img {
+		margin:  0;
+	}
+
+	header li a {
+		text-decoration: none;
+		font-weight: 600;
+		color: #66615a;
+		font-size: 14px;
+	}
+
+	header li a:hover {
+		color: #c94a00; /* orange */
+	}
+
+	header ul {
+		list-style: none;
+		margin: 10px;
+	}
+
+	header li {
+		float: left;
+		margin: 10px;
+
+	}
+
+	header li a {
+		text-transform: uppercase;
+	}
+
+	header li#download {
+		margin: 10px;
+	}
+
+	header li#download a {
+		border: solid 2px #66615a;
+		padding: 5px 10px;
+		border-radius: 16px;
+	}
+
+	header li#download a:hover {
+		color: #ffffff; /* white */
+		background: #66615a; /* brown */
+	}
+
+	header .socials {
+		margin: 4px 5px 0 5px;
+		width: 30px
+	}
+
+	header #facebook-icon {
+		margin-left: 20px;
+	}
+
+	header #twitter-icon {
+
+	}
+
+/* this is there the @media stuff will go
+	header nav ul {
+		margin-left: 15px;
+	}
+*/
+
+/* ================================== *//*
+HOMEPAGE STYLE GOES NEXT
+/* ================================== */ 
+
+/* hero section  ===   
+uses classes: "row" "button"
+uses IDs: "hero", "buy-now", "watch-video"
+uses Combinators: 
+	class: button for <a> tags
+	ID: buy-now hover interaction <a> tags
+*/ 
+	#hero {
+		background-image: url("hero1.jpg");
+		background-size: cover;
+		background-color: #66615a;  /*temporary brown so text shows up */
+		height: 82vh;
+	}
+
+	#hero h1 {
+		font-size: 74px;
+		font-weight: 300;
+		color: #fff;
+		margin-top: 150px;
+		margin-bottom: 75px;
+		line-height: 76px;
+	}
+
+	#hero h1 span {
+		font-weight: 600;
+	}
+
+	#hero a {
+		color: #fff; /* white */
+		font-weight: normal;
+	}
+
+	#hero a:hover {
+		color: #c94a00; /* orange */
+	}
+
+	a#buy-now {
+		padding: 10px 30px;
+		border-radius: 20px;
+		font-weight: 300;
+		color: white;
+		background-color: #ec5e28;
+		margin-top: 18px;
+		margin-right: 80px;
+	}
+
+	a#buy-now:hover {
+		background-color: #a13b00;
+		color: white;
+	}
+
+	#watch {
+		margin-top: 100px;
+	}
+
+/* Surface Pressure  ===   
+uses classes: "row"
+uses IDs: "surface-pressure"
+*/ 
+
+#surface-pressure {
+	padding-top: 30px;
+}
+
+#surface-pressure .row {
+	color: #67625e;
+}
+
+#surface-pressure h2 {
+	line-height: 80%;
+}
+
+/* Simply Works  ===   
+uses classes: "sw-icon-adjust-1", "sw-icon-adjust-2"
+uses IDs: "simply-works", "simply-header", "simply-features", "kiss"
+*/ 
+
+#simply-works {
+	text-align: center;
+}
+
+#simply-header {
+
+}
+
+#simply-header p {
+
+}
+
+#simply-works h1 {
+	color: #66625b; /* dark clay */
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 1;
+}
+
+#simply-works h2 {
+	color: #272121;
+}
+
+#simply-works p {
+	padding-bottom: 50px;
+}
+
+#simply-features p {
+	text-align: left;
+}
+
+#kiss {
+	height: 90px;
+}
+
+
+#plays {
+	height: 90px;
+}
+
+/* ================================== *//*
+INTERIOR STYLE GOES NEXT
+/* ================================== */ 
+
+/* === Interior page Makers wanted  ==== */ 
+
+#hero-makers {
+	background-image: url("hero2.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 546px;
+}
+
+#hero-makers h1 {
+	font-size: 53pt;
+	text-transform: uppercase;
+	color: #ffffff; /* white */
+	font-weight: 700;
+	margin-top: 191px;
+	line-height: 110%
+}
+
+#hero-makers h1 span {
+	font-weight: 300;
+}
+
+#hero-makers p a {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff; /* white */
+}
+
+#hero-makers p a:hover {
+	color: #ec5e28;
+}
+
+#makers-body ul {
+	margin-top: 138px;
+}
+
+#makers-body nav li {
+	text-transform: uppercase;
+	list-style: none;
+	padding: 14px 0 14px 10px;
+	border-bottom: 1px solid #ec5e28; /* bright orange */
+}
+
+#makers-body #why {
+	border-top: 1px solid #ec5e28; /* bright orange */
+}
+
+#makers-body div {
+	margin-top: 87px;
+	margin-bottom: 15px;
+}
+
+#makers-body span {
+	color: #ec5e28; /* bright orange */
+	font-weight: bold;
+}
+
+#makers-body h2 {
+	margin-top: 45px;
+	margin-bottom: 28px;
+}
+
+/* === Interior page No. 2 Pencil  ==== */ 
+
+header #pencil {
+	
+	
+}
+
+#hero_pencil {
+	background-image: url("tip.png");
+		background-size: contain;
+		background-color: #fff;  /* White Background */
+		height: 86vh;
+		z-index: 0;
+}
+
+
+#hero_pencil h1 {
+	font-size: 53pt;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-top: 90px;
+	line-height: 110%;
+	
+}
+
+#hero_pencil .container {
+	padding-top: 300px;
+}
+
+#crafted .row {
+	color: #67625e;
+	text-align: center;
+}
+
+#crafted h2 {
+	color: #66625b; /* dark clay */
+	padding-top: 50px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 1;
+}
+
+/* Insert CARD Styles Here */
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+/*box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);*/
+  /*cursor: pointer;*/
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title_1line {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card .card_title_2lines {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: -120px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.title-black {
+  color: black;
+  text-shadow: 2px 2px 5px #fff
+}
+
+#card-bios h2 {
+	background-color: white;
+	color: #66625b;
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ec5e28;
+}
+
+#card-bios p {
+	background-color: white;
+	color: #66625b;
+	border-radius: 20px;
+	text-align: center;
+	padding: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ec5e28;
+	
+}
+
+
+
+/* END of CARD style */
+
+/* Pencil Colors */
+
+#yellow h2 {
+	line-height: 80%;
+	padding-top: 30px;
+	color: #E2C928;
+}
+
+#yellow {
+	
+	text-align: center;
+}
+
+#green h2 {
+	line-height: 80%;
+	padding-top: 30px;
+	color: #1C5F4A;
+}
+
+#green {
+	
+	text-align: center;
+}
+
+
+
+
+#length {
+	background-image: url("length.png");
+		background-size: contain;
+		background-color: #fff;  /* White Background */
+		height: 43vh;
+		z-index: 0;
+}
+
+/* "ICONIC" */
+#length .big {
+	color: #67625e;
+	font-size: 200px;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 43vh;
+}
+
+#form .big {
+	color: #67625e;
+	font-size: 170px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 120px;
+	line-height: 10px;
+	overflow: visible;
+	font-weight: 700
+}
+
+.introductory h3 {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	margin-top: 150px;
+	color: #c94a00;
+	text-align: center;
+}
+
+#buy-now .introductory a {
+	text-align: center;
+}
+
+#eraser {
+	background-image: url("eraser.png");
+		background-size: contain;
+		background-color: #fff;  /* White Background */
+		height: 43vh;
+		z-index: 0;
+}
+
+/* ================================== *//*
+FOOTER STYLE GOES NEXT
+/* ================================== */ 
+
+/* footer  ===   
+uses classes: "bright", "copyright"
+*/ 
+
+footer {
+	background-color: #252321;
+	color: #a39e93;
+	padding-top: 35px;
+	font-size: 90%;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	margin-bottom: 8px;
+}
+
+footer li a {
+	color: #66615a; /* brown */
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+
+.copyright {
+	margin-top: 50px;
+	margin-bottom: 115px;
+	font-size: 85%;
+	text-align: center;
+}
+
+.copyright a {
+ 	font-weight: normal;
+ 	text-transform: none;
+}
+
+/* ================================== *//*
+JUNK/TEST CODE??? STYLE GOES NEXT
+/* ================================== */ 
+
